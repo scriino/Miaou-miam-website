@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miaou Miam - Paramètres de distribution</title>
+    <style>
+	        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef9ea;
+        }
+		
+		header {
+            background-color: #ab8262;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+<!--         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fef9ea;
+        } -->
+
+        /* Style pour les boutons de choix non sélectionnés */
+        button.choix {
+            background-color: #bb9b81; /* Couleur pour les boutons non sélectionnés */
+            color: #fff; /* Couleur du texte pour les boutons non sélectionnés (blanc ici, ajustez si nécessaire) */
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Style pour les boutons de choix sélectionnés */
+        button.choix.selected {
+            background-color: #ab8262; /* Couleur pour les boutons sélectionnés */
+        }
+
+        /* Ajouter un effet de clic pour les boutons */
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        /* Style pour les autres boutons de la page */
+        button.autre {
+            background-color: #ab8262; /* Couleur pour les autres boutons */
+            color: #fff; /* Couleur du texte pour les autres boutons (blanc ici, ajustez si nécessaire) */
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Style pour le logo */
+<!--         #logo {
+            width: px; /* Changer la largeur selon vos besoins */
+            height: auto; /* Cette valeur maintient les proportions d'origine */
+            position: absolute;
+            top: 10px; /* Ajustez la valeur en fonction de votre design */
+            left: 10px; /* Ajustez la valeur en fonction de votre design */
+        } -->
+		
+		.logo-container {
+            position: absolute;
+            top: -10px;
+            left: -200px;
+        }
+
+        .logo-container a {
+            display: block;
+        }
+
+        .logo {
+            max-width: 25%;
+            height: auto;
+        }
+
+        button {
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .selected {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .highlighted {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .definition-input {
+            display: none; /* Caché par défaut */
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+
+        #validationButton {
+            /* Visible dès l'ouverture de la page */
+            display: block;
+            margin: 20px auto; /* Centrer horizontalement */
+            padding: 10px 20px;
+            background-color: #ab8262;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #okButton {
+            /* Toujours visible */
+            display: block;
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: #ab8262;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #confirmationMessage {
+            display: none; /* Caché par défaut */
+            margin-top: 20px;
+        }
+		
+        nav {
+            background-color: #bb9b81;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #fef9ea;
+            color: black;
+        }
+		        section {
+            padding: 2em;
+            text-align: center;
+        }
+		
+        section {
+            padding: 2em;
+            text-align: left; /* Aligner le texte vers la gauche */
+			margin-bottom: 40px; /* Ajout de marge inférieure pour éviter le chevauchement avec le footer */						
+        }
+
+        section h2 {
+            text-align: center; /* Centrer le texte à l'intérieur de h2 */
+        }		
+
+        footer {
+            background-color: #ab8262;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../web/page_accueil.html">
+                <img class="logo" src="../image/default2-removebg-preview.png" alt="Logo de Mon Site Web">
+            </a>
+        </div>
+        <h1>Miaou Miam</h1>
+    </header>
+	
+	<nav>
+        <a href="../web/page_presentation.html">Qui sommes nous ?</a>
+        <a href="../web/page_produit.html">Notre produit</a>
+        <a href="../web/appli.html">Programmation de la gamelle</a>
+        <a href="../web/page_contact.html">Contacts</a>
+    </nav>
+	<section>
+		<h2>Paramètres de distribution</h2>
+	</section>
+
+	
+    <!-- Logo -->
+    <!-- <img id="logo" src="../image/default2-2-removebg-preview.png" alt="Votre Logo"> -->
+
+    <!-- Boutons de choix -->
+    <button onclick="choix(1)" id="choix1" class="choix">10 h</button>
+    <button onclick="choix(2)" id="choix2" class="choix">12 h</button>
+    <button onclick="choix(3)" id="choix3" class="choix">14 h</button>
+    <button onclick="choix(4)" id="choix4" class="choix">16 h</button>
+    <button onclick="choix(5)" id="choix5" class="choix">18 h</button>
+    <button onclick="choix(6)" id="choix6" class="choix">20 h</button>
+
+    <!-- Autres boutons de la page -->
+    <button onclick="valider()" id="validationButton" class="autre">Valider</button>
+
+    <div class="definition-input" id="definitionInput">
+        <label for="masseDefinition">Définition de la masse : </label>
+        <input type="number" id="masseDefinition" placeholder="Entrez la définition de la masse" min="0">
+		<button onclick="enregistrerChoix()" id="okButton" class="autre">OK</button>
+    </div>
+
+    <div id="confirmationMessage">
+        <p id="resultatMessage"></p>
+        <p id="choixMessage"></p>
+    </div>
+
+    <script>
+        var choixSelectionnes = [];
+        var boutonValide = false;
+
+		// Appeler la fonction d'initialisation lors du chargement de la page
+		window.onload = function () {
+		    initialiserChoix();
+		};
+
+		// Fonction pour initialiser les libellés des boutons
+		function initialiserChoix() {
+		    for (var i = 1; i <= 6; i++) {
+		        var button = document.getElementById("choix" + i);
+		        switch (i) {
+		            case 1:
+		                button.textContent = "10h";
+		                break;
+		            case 2:
+		                button.textContent = "12h";
+		                break;
+		            case 3:
+		                button.textContent = "14h";
+		                break;
+		            case 4:
+		                button.textContent = "16h";
+		                break;
+		            case 5:
+		                button.textContent = "18h";
+		                break;
+		            case 6:
+		                button.textContent = "20h";
+		                break;
+		            default:
+		                break;
+		        }
+		    }
+		}		
+
+        function choix(numero) {
+            if (!boutonValide) {
+                var selectedButton = document.getElementById("choix" + numero);
+
+                if (selectedButton.classList.contains("selected")) {
+                    // Si le bouton est déjà sélectionné, le désélectionner
+                    selectedButton.classList.remove("selected");
+                    choixSelectionnes = choixSelectionnes.filter(choix => choix !== numero);
+                } else {
+                    // Si le bouton n'est pas sélectionné, le sélectionner
+                    selectedButton.classList.add("selected");
+                    choixSelectionnes.push(numero);
+                }
+
+                // Mettre à jour l'affichage du bouton de validation
+                var validationButton = document.getElementById("validationButton");
+                validationButton.classList.toggle("highlighted", choixSelectionnes.length === 3);
+
+                // Valider automatiquement si trois choix sont sélectionnés
+                if (choixSelectionnes.length === 3) {
+                    valider();
+                }
+            }
+        }
+
+        function valider() {
+            // Afficher la zone d'entrée de texte
+            var definitionInput = document.getElementById("definitionInput");
+            definitionInput.style.display = "flex"; // Utiliser flex pour aligner les éléments horizontalement
+
+            // Désactiver les boutons de choix après validation
+            bloquerChoix();
+
+            // Afficher le bouton "OK"
+            var okButton = document.getElementById("okButton");
+            okButton.style.display = "block";
+        }
+
+        function enregistrerChoix() {
+		    // Récupérer la valeur de la zone de texte
+		    var masseDefinition = document.getElementById("masseDefinition").value;
+		
+		    // Enregistrer les données dans un fichier texte au format "http"
+		    var data = {
+		        choix: choixSelectionnes,
+		        masseDefinition: masseDefinition
+		    };
+		
+		    var queryString = Object.keys(data)
+		        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+		        .join('&');
+		
+		    var httpFrame = 'http://exemple.com?' + queryString;
+		
+		    // Afficher le message de confirmation avec la valeur
+		    var resultatMessage = document.getElementById("resultatMessage");
+		    resultatMessage.textContent = "LA MASSE DÉFINIE EST DE " + masseDefinition + " GRAMMES";
+		
+		    // Afficher le message de confirmation des choix
+		    var choixMessage = document.getElementById("choixMessage");
+		    choixMessage.textContent = choixSelectionnes.length === 1 ? "VOUS AVEZ FAIT LE CHOIX SUIVANT : " + choixSelectionnes[0] : "VOUS AVEZ FAIT LES CHOIX SUIVANTS : " + choixSelectionnes.join(", ");
+		
+		    // Afficher le message de confirmation
+		    var confirmationMessage = document.getElementById("confirmationMessage");
+		    confirmationMessage.style.display = "block";
+		    
+            // Désactiver le bouton de validation
+            var validationButton = document.getElementById("validationButton");
+            validationButton.disabled = true;
+
+            // Désactiver le bouton "OK"
+            var okButton = document.getElementById("okButton");
+            okButton.disabled = true;
+
+            // Réinitialiser l'état du bouton "OK" pour permettre de nouveaux clics
+            setTimeout(function () {
+                okButton.disabled = false;
+            }, 500); // Réactive le bouton après 0,5 seconde (ajustez si nécessaire)
+
+            // Afficher la trame "http" dans la console (vous pouvez ajuster cela selon vos besoins)
+            console.log('Trame HTTP :', httpFrame);
+            }
+
+
+        function bloquerChoix() {
+            boutonValide = true;
+            for (var i = 1; i <= 6; i++) {
+                var button = document.getElementById("choix" + i);
+                button.disabled = true;
+            }
+        }
+    </script>
+	
+	<footer>
+        <p>&copy; 2023 Miaou Miam Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
